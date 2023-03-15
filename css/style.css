@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 :root{
     --main-color: #1f2937;
+    --blue: #3882F6;
     --font: 'Roboto';
 }
 *, *::before, *::after {
@@ -16,6 +17,9 @@ html, body {
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    background-color: var(--main-color);
+    max-width: 950px;
+    margin: 0 auto;
 }
   img, picture, video, canvas, svg {
     display: block;
@@ -34,21 +38,52 @@ li{
     isolation: isolate;
 }
 header{
-    background-color: var(--main-color);
-    color: aliceblue;
-}
-.content{
-    max-width: 1250px;
-    margin: 0 auto;
     display: flex;    
     justify-content: space-between;
+    color: aliceblue;
+    margin-top: 10px;
 }
 span.logo{
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bold;
 }
 .links{
     display: flex;
     gap: 16px;
     align-items: center;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+main{
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    margin-top: 50px;
+}
+.primary-text{
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+    padding-bottom: 12px;
+}
+.secondary-text{
+    color: #F9FAF8;
+    padding-bottom: 12px;
+}
+.btn-blue{
+    padding: 5px 30px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--blue);
+    color: #F9FAF8 ;
+}
+.img-hero{
+    justify-self: center;
+    max-width: 500px;
+    min-height: 300px;
 }
