@@ -1,26 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+    --main-color: #1f2937;
+    --font: 'Roboto';
+}
 *, *::before, *::after {
     box-sizing: border-box;
-  }
-  * {
+}
+* {
     margin: 0;
-  }
-  html, body {
+}
+html, body {
     height: 100%;
-  }
-  body {
+    font-family: var(--font);
+}
+body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-  }
+}
   img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
-  }
-  input, button, textarea, select {
+}
+input, button, textarea, select {
     font: inherit;
-  }
-  p, h1, h2, h3, h4, h5, h6 {
+}
+p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
-  }
-  #root, #__next {
+}
+li{
+    list-style: none;
+}
+#root, #__next {
     isolation: isolate;
-  }
+}
+header{
+    background-color: var(--main-color);
+    color: aliceblue;
+}
+.content{
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;    
+    justify-content: space-between;
+}
+span.logo{
+    font-size: 28px;
+    font-weight: bold;
+}
+.links{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
