@@ -17,9 +17,6 @@ html, body {
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    background-color: var(--main-color);
-    max-width: 950px;
-    margin: 0 auto;
 }
   img, picture, video, canvas, svg {
     display: block;
@@ -37,11 +34,20 @@ li{
 #root, #__next {
     isolation: isolate;
 }
-header{
+header,
+main{
+    width: 100%;
+    background-color: var(--main-color);
+}
+.header-content{
     display: flex;    
     justify-content: space-between;
     color: aliceblue;
-    margin-top: 10px;
+    padding-top: 10px;
+}
+.wrapped-content{
+    max-width: 900px;
+    margin: 0 auto;
 }
 span.logo{
     font-size: 20px;
@@ -57,13 +63,13 @@ span.logo{
     justify-content: center;
     gap: 60px;
 }
-main{
-    height: 50vh;
+.main-content{
+    height: 400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 80px;
-    margin-top: 50px;
+    padding-top: 50px;
 }
 .primary-text{
     font-size: 48px;
@@ -84,6 +90,11 @@ main{
 }
 .img-hero{
     justify-self: center;
-    max-width: 500px;
-    min-height: 300px;
+    max-width: 400px;
+    max-height: 400px;
+}
+.bg-white{
+    max-width: 100% !important;
+    background-color: #F9FAF8;
+    height: 400px;
 }
